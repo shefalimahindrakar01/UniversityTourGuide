@@ -7,6 +7,8 @@ target 'UONTourGuide' do
 
   # Pods for UONTourGuide
   pod 'GoogleMaps', '7.1.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
   target 'UONTourGuideTests' do
     inherit! :search_paths
