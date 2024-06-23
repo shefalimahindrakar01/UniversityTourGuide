@@ -18,6 +18,7 @@
 		327FE7EF2C1DB402005A0FAE /* UONTourGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7EE2C1DB402005A0FAE /* UONTourGuideTests.swift */; };
 		327FE7F92C1DB402005A0FAE /* UONTourGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7F82C1DB402005A0FAE /* UONTourGuideUITests.swift */; };
 		327FE7FB2C1DB402005A0FAE /* UONTourGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7FA2C1DB402005A0FAE /* UONTourGuideUITestsLaunchTests.swift */; };
+		32D926B02C2866AD003E8385 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D926AF2C2866AD003E8385 /* GoogleService-Info.plist */; };
 		E16FEC099CCD8A08E2C75355 /* Pods_UONTourGuide_UONTourGuideUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBC7164E33BD62003AEE090 /* Pods_UONTourGuide_UONTourGuideUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		327FE7F42C1DB402005A0FAE /* UONTourGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UONTourGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327FE7F82C1DB402005A0FAE /* UONTourGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UONTourGuideUITests.swift; sourceTree = "<group>"; };
 		327FE7FA2C1DB402005A0FAE /* UONTourGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UONTourGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32D926AF2C2866AD003E8385 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68036E0920DDF81A2C9AC85A /* Pods_UONTourGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UONTourGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7007F857E40920E103AC2D43 /* Pods-UONTourGuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UONTourGuideTests.release.xcconfig"; path = "Target Support Files/Pods-UONTourGuideTests/Pods-UONTourGuideTests.release.xcconfig"; sourceTree = "<group>"; };
 		74DA22F804CDF8EF1C9F4517 /* Pods-UONTourGuide-UONTourGuideUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UONTourGuide-UONTourGuideUITests.release.xcconfig"; path = "Target Support Files/Pods-UONTourGuide-UONTourGuideUITests/Pods-UONTourGuide-UONTourGuideUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				327FE7E02C1DB402005A0FAE /* Assets.xcassets */,
 				327FE7E22C1DB402005A0FAE /* LaunchScreen.storyboard */,
 				327FE7E52C1DB402005A0FAE /* Info.plist */,
+				32D926AF2C2866AD003E8385 /* GoogleService-Info.plist */,
 			);
 			path = UONTourGuide;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327FE7E12C1DB402005A0FAE /* Assets.xcassets in Resources */,
+				32D926B02C2866AD003E8385 /* GoogleService-Info.plist in Resources */,
 				327FE7E42C1DB402005A0FAE /* Base in Resources */,
 				327FE7DF2C1DB401005A0FAE /* Base in Resources */,
 			);
