@@ -9,6 +9,9 @@ target 'UONTourGuide' do
   pod 'GoogleMaps', '7.1.0'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'SVProgressHUD', '~> 2.1'
+  pod 'TTGSnackbar'
+  pod 'SideMenu'
 
   target 'UONTourGuideTests' do
     inherit! :search_paths

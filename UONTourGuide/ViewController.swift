@@ -9,21 +9,49 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var btnSignIn: UIButton!
+    @IBOutlet weak var btnSignUp: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    func setupUI() {
+        self.view.applyGradient(colors: [UIColor.primaryColor, UIColor.secondaryColor, UIColor.tertiaryColor])
+        
+        let borderColor = UIColor.white
+        let borderWidth: CGFloat = 1.0
+        let cornerRadius: CGFloat = 10.0
+        
+        btnSignIn.customizeBorderAndCornerRadius(borderColor: borderColor, borderWidth: borderWidth, cornerRadius: cornerRadius)
+        btnSignUp.customizeBorderAndCornerRadius(borderColor: borderColor, borderWidth: borderWidth, cornerRadius: cornerRadius)
+    }
+    
+    @IBAction func btnSignInTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC {
+            self.navigationController?.pushViewController(signUpVC, animated: true)
+        }
     }
     
     @IBAction func btnSignUpTapped(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        // Instantiate the view controller by its identifier
         if let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC {
-            
-            // Present the view controller
-            self.present(signUpVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(signUpVC, animated: true)
         }
     }
     
 }
+
 
