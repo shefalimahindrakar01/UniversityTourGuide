@@ -14,7 +14,7 @@ class SideMenuVC: UIViewController {
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblAppVersion: UILabel!
     
-    let menuItems = ["Home", "About", "Settings", "Logout"]
+    let menuItems = ["Home", "About", "University Info", "Quiz", "Trivia", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +73,6 @@ class SideMenuVC: UIViewController {
             showErrorSnackbar(message: signOutError.localizedDescription)
         }
     }
-    
 }
 
 // MARK: - UITableViewDataSource
@@ -103,16 +102,35 @@ extension SideMenuVC: UITableViewDelegate {
         let selectedItem = menuItems[indexPath.row]
         switch selectedItem {
         case "Home":
-            print("Home Action Here")
+            openViewController(withIdentifier: "HomeVC")
         case "About":
-            print("About Action Here")
-        case "Settings":
-            print("About Action Here")
+            openViewController(withIdentifier: "AboutAppVC")
+        case "University Info":
+            openViewController(withIdentifier: "UniversityInfoVC")
+        case "Quiz":
+            openViewController(withIdentifier: "QuizVC")
+        case "Trivia":
+            openViewController(withIdentifier: "TriviaVC")
         case "Logout":
             signOut()
         default:
             break
         }
     }
+    
+    private func openViewController(withIdentifier identifier: String) {
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: identifier) else {
+            return
+        }
+        
+        // Check if the view controller is already in the navigation stack
+        if let navigationController = navigationController {
+            if let topViewController = navigationController.topViewController, topViewController.isKind(of: viewController.classForCoder) {
+                // Already at this view controller, do nothing
+                return
+            }
+        }
+        
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
-

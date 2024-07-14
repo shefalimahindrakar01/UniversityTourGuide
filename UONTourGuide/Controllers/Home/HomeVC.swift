@@ -11,6 +11,7 @@ import SideMenu
 struct Tour {
     var name: String
     var description: String
+    var imageName: String
 }
 
 class HomeVC: UIViewController {
@@ -20,9 +21,9 @@ class HomeVC: UIViewController {
     var menu: SideMenuNavigationController?
     
     var tours: [Tour] = [
-        Tour(name: "University of Nottingham UK", description: "Description of University of Nottingham UK Tour"),
-        Tour(name: "University of Nottingham China", description: "Coming Soon"),
-        Tour(name: "University of Nottingham Malaysia", description: "Coming Soon")
+        Tour(name: "University of Nottingham UK", description: "Description of University of Nottingham UK Tour", imageName: "img_tour1"),
+        Tour(name: "University of Nottingham China", description: "Coming Soon", imageName: "img_tour2"),
+        Tour(name: "University of Nottingham Malaysia", description: "Coming Soon", imageName: "img_tour3")
     ]
     
     override func viewDidLoad() {
@@ -79,7 +80,7 @@ extension HomeVC: UITableViewDataSource {
         cell.selectionStyle = .none
         cell.delegate = self
         let tour = tours[indexPath.row]
-        cell.configure(with: tour)
+        cell.configure(with: tour, index: indexPath.row)
         return cell
     }
 }
@@ -89,8 +90,19 @@ extension HomeVC: UITableViewDelegate {
 }
 
 extension HomeVC: TourListTableCellDelegate {
-    func didTapStartTour(tourName: String) {
-        print("Start Tour button tapped for tour: \(tourName)")
+    func didTapStartTour(tourName: String, index: Int) {
+        switch index {
+        case 0:
+            guard let segmentedViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TourDetailsVC") as? TourDetailsVC else {
+                return
+            }
+            navigationController?.pushViewController(segmentedViewController, animated: true)
+        case 1:
+            showErrorSnackbar(message: "Coming Soon")
+        case 2:
+            showErrorSnackbar(message: "Coming Soon")
+        default:
+            showErrorSnackbar(message: "Coming Soon")
+        }
     }
 }
-
