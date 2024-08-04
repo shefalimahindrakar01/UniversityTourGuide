@@ -49,7 +49,7 @@ extension SubTourListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-       
+        self.tourDetailsVC.mediaPlayerView.presentInView(self.tourDetailsVC.view)
+        self.tourDetailsVC.mediaPlayerView.loadAudio(at: indexPath.row)
     }
 }
-

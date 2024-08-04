@@ -8,7 +8,7 @@
 import UIKit
 
 class SubTourListTableCell: UITableViewCell {
-
+    
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var imgStop: UIView!
     @IBOutlet weak var lblStopName: UILabel!
@@ -26,3 +26,4 @@ class SubTourListTableCell: UITableViewCell {
     }
     
 }
+

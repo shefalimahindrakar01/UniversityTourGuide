@@ -59,9 +59,13 @@ class MapPreviewVC: UIViewController, GMSMapViewDelegate {
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        
+        if let index = markerToIndexMap[marker] {
+            presentMediaPlayerVC(for: index)
+        }
     }
     
-
+    func presentMediaPlayerVC(for index: Int) {
+        self.tourDetailsVC.mediaPlayerView.presentInView(self.tourDetailsVC.view)
+        self.tourDetailsVC.mediaPlayerView.loadAudio(at: index)
+    }
 }
-

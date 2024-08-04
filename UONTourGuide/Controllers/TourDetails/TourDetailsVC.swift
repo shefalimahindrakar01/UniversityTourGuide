@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class TourDetailsVC: UIViewController {
+class TourDetailsVC: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -26,6 +27,11 @@ class TourDetailsVC: UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SubTourListVC") as! SubTourListVC
     }()
     
+    var mediaPlayerView: CustomMediaPlayerView!
+    var locationManager: CLLocationManager!
+    
+    // Boolean flag to track if the alert has been shown
+    private var alertShown = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +43,11 @@ class TourDetailsVC: UIViewController {
         // Display the first view controller by default
         displayViewController(firstViewController)
         
-    
+        // Setup the custom media player view
+        setupMediaPlayerView()
+        
+        // Setup location manager
+        setupLocationManager()
     }
     
     func configureSegmentedControlAppearance() {
@@ -73,6 +83,7 @@ class TourDetailsVC: UIViewController {
         currentViewController?.view.removeFromSuperview()
         switch sender.selectedSegmentIndex {
         case 0:
+            firstViewController.tourDetailsVC = self
             displayViewController(firstViewController)
         case 1:
             secondViewController.tourDetailsVC = self
@@ -85,7 +96,52 @@ class TourDetailsVC: UIViewController {
         }
     }
     
-   
+    func setupMediaPlayerView() {
+        let mediaPlayerView = Bundle.main.loadNibNamed("CustomMediaPlayerView", owner: self, options: nil)?.first as! CustomMediaPlayerView
+        self.mediaPlayerView = mediaPlayerView
+        mediaPlayerView.presentInView(self.view)
+    }
+    
+    func setupLocationManager() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let currentLocation = locations.first else { return }
+        
+        let firstStop = GlobalData.uonLocations.first!
+        let firstStopLocation = CLLocation(latitude: firstStop.latitude, longitude: firstStop.longitude)
+        
+        if currentLocation.distance(from: firstStopLocation) > 50 { // Assuming 50 meters as the threshold
+            // Ensure alert is only shown once
+            if !alertShown {
+                showAlertToNavigateToFirstStop()
+                alertShown = true
+            }
+        }
+    }
+    
+    func showAlertToNavigateToFirstStop() {
+        let alert = UIAlertController(title: "Not at First Stop", message: "You are not at the first stop. Would you like to navigate there?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Navigate", style: .default, handler: { _ in
+            self.navigateToFirstStop()
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func navigateToFirstStop() {
+        guard let firstStop = GlobalData.uonLocations.first else { return }
+        let googleMapsURL = URL(string: "comgooglemaps://?daddr=\(firstStop.latitude),\(firstStop.longitude)&directionsmode=driving")!
+        let webURL = URL(string: "https://www.google.com/maps/dir/?api=1&destination=\(firstStop.latitude),\(firstStop.longitude)&travelmode=driving")!
+        
+        if UIApplication.shared.canOpenURL(googleMapsURL) {
+            UIApplication.shared.open(googleMapsURL, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+        }
+    }
 }
-
-

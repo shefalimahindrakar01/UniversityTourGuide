@@ -34,3 +34,4 @@ public func showLoadingIndicator() {
 public func hideLoadingIndicator() {
     SVProgressHUD.dismiss()
 }
+

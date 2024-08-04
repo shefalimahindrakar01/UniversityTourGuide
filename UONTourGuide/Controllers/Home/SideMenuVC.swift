@@ -14,7 +14,7 @@ class SideMenuVC: UIViewController {
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblAppVersion: UILabel!
     
-    let menuItems = ["Home", "About", "University Info", "Quiz", "Trivia", "Logout"]
+    let menuItems = ["Home", "About", "University Info", "Quiz", "Trivia", "Feedback", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +55,15 @@ class SideMenuVC: UIViewController {
     }
     
     func signOut() {
+        let alert = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Logout", style: .destructive, handler: { _ in
+            self.performSignOut()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func performSignOut() {
         showLoadingIndicator()
         do {
             UserDefaults.standard.removeObject(forKey: "isLoggedIn")
@@ -69,8 +78,32 @@ class SideMenuVC: UIViewController {
                 }
             }
         } catch let signOutError as NSError {
-            hideLoadingIndicator() // Hide loading indicator
+            hideLoadingIndicator()
             showErrorSnackbar(message: signOutError.localizedDescription)
+        }
+    }
+    
+    @IBAction func btnInstagramTapped(_ sender: UIButton) {
+        openURL("https://www.instagram.com/dummyPage")
+    }
+    
+    @IBAction func btnFacebookTapped(_ sender: UIButton) {
+        openURL("https://www.facebook.com/dummyPage")
+    }
+    
+    @IBAction func btnTwitterTapped(_ sender: UIButton) {
+        openURL("https://twitter.com/dummyPage")
+    }
+    
+    private func openURL(_ urlString: String) {
+        guard let url = URL(string: urlString) else {
+            print("Invalid URL")
+            return
+        }
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            print("Cannot open URL: \(urlString)")
         }
     }
 }
@@ -111,6 +144,8 @@ extension SideMenuVC: UITableViewDelegate {
             openViewController(withIdentifier: "QuizVC")
         case "Trivia":
             openViewController(withIdentifier: "TriviaVC")
+        case "Feedback":
+            presentViewController(withIdentifier: "FeedbackVC")
         case "Logout":
             signOut()
         default:
@@ -133,4 +168,14 @@ extension SideMenuVC: UITableViewDelegate {
         
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    private func presentViewController(withIdentifier identifier: String) {
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: identifier) else {
+            return
+        }
+        
+        // Present the view controller modally
+        present(viewController, animated: true, completion: nil)
+    }
+    
 }

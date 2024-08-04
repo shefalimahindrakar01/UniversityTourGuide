@@ -14,6 +14,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     var mapView: GMSMapView!
     var locationManager: CLLocationManager!
     var lastLocationUpdate: CLLocation?
+    var regions: [GMSCircle] = []
+    var tourDetailsVC: TourDetailsVC!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +33,19 @@ class MapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
         mapView.delegate = self
         view.addSubview(mapView)
         
-        // Add blue polyline
+        // Add blue polyline and circles
         let polyline = GMSPolyline()
         polyline.strokeColor = .blue
         polyline.strokeWidth = 2.0
         var path = GMSMutablePath()
         
-        // Add circles and connect with polyline
         for location in GlobalData.uonLocations {
             let circle = GMSCircle(position: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude), radius: 10.0)
             circle.fillColor = UIColor.red.withAlphaComponent(0.5)
+            circle.strokeColor = .black
+            circle.strokeWidth = 1.0
             circle.map = mapView
+            regions.append(circle)
             
             path.add(CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
         }
@@ -66,14 +70,22 @@ class MapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
         }
         lastLocationUpdate = location
         
+        // Check if the user is inside any region
+        for region in regions {
+            if isLocation(location.coordinate, within: region) {
+                handleRegionEntry(region: region)
+                break
+            }
+        }
+        
         // Adjust camera to fit all locations and user's location
         var bounds = GMSCoordinateBounds()
         for location in locations {
             let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             bounds = bounds.includingCoordinate(coordinate)
         }
-        for location in GlobalData.uonLocations {
-            let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+        for region in regions {
+            let coordinate = region.position
             bounds = bounds.includingCoordinate(coordinate)
         }
         
@@ -84,5 +96,28 @@ class MapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Location manager failed with error: \(error)")
     }
+    
+    // MARK: - Handle region entry
+    func handleRegionEntry(region: GMSCircle) {
+        // Find the index of the region
+        if let regionIndex = regions.firstIndex(where: { $0 === region }), regionIndex < GlobalData.uonLocations.count {
+            let mediaIndex = GlobalData.uonLocations[regionIndex].mediaIndex
+            presentMediaPlayerVC(for: mediaIndex)
+        } else {
+            print("Region index not found.")
+        }
+    }
+    
+    func presentMediaPlayerVC(for index: Int) {
+        self.tourDetailsVC.mediaPlayerView.presentInView(self.tourDetailsVC.view)
+        self.tourDetailsVC.mediaPlayerView.loadAudio(at: index)
+    }
+    
+    // MARK: - Helper Methods
+    func isLocation(_ coordinate: CLLocationCoordinate2D, within circle: GMSCircle) -> Bool {
+        let circleCenter = CLLocation(latitude: circle.position.latitude, longitude: circle.position.longitude)
+        let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        let distance = circleCenter.distance(from: location)
+        return distance <= circle.radius
+    }
 }
-
