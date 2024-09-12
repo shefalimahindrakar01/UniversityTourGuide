@@ -21,9 +21,8 @@ class HomeVC: UIViewController {
     var menu: SideMenuNavigationController?
     
     var tours: [Tour] = [
-        Tour(name: "University of Nottingham UK", description: "Description of University of Nottingham UK Tour", imageName: "img_tour1"),
-        Tour(name: "University of Nottingham China", description: "Coming Soon", imageName: "img_tour2"),
-        Tour(name: "University of Nottingham Malaysia", description: "Coming Soon", imageName: "img_tour3")
+        Tour(name: "Jubilee Campus,University of Nottingham", description: "The campus features cutting-edge architecture, sustainable design, and a vibrant academic community.", imageName: "img_tour1"),
+        Tour(name: "Park Campus, University of Nottingham", description: "Coming Soon", imageName: "img_tour2"),
     ]
     
     override func viewDidLoad() {
@@ -72,7 +71,7 @@ extension HomeVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+        return 200
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

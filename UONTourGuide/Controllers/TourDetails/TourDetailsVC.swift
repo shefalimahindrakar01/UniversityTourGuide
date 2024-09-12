@@ -50,6 +50,11 @@ class TourDetailsVC: UIViewController, CLLocationManagerDelegate {
         setupLocationManager()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        mediaPlayerView.hideView()
+    }
+    
     func configureSegmentedControlAppearance() {
         segmentedControl.backgroundColor = UIColor.white
         segmentedControl.selectedSegmentTintColor = UIColor.textColor

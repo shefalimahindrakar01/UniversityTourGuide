@@ -84,11 +84,11 @@ class SideMenuVC: UIViewController {
     }
     
     @IBAction func btnInstagramTapped(_ sender: UIButton) {
-        openURL("https://www.instagram.com/dummyPage")
+        openURL("https://www.instagram.com/uniofnottingham?igsh=czkxMWJsYTdkYmRj")
     }
     
     @IBAction func btnFacebookTapped(_ sender: UIButton) {
-        openURL("https://www.facebook.com/dummyPage")
+        openURL("https://www.facebook.com/UniofNottingham")
     }
     
     @IBAction func btnTwitterTapped(_ sender: UIButton) {
