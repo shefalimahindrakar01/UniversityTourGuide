@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		1784573537FE559F8D3998C7 /* Pods_UONTourGuideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E40D2F34F82B2DE7A36EB6E /* Pods_UONTourGuideTests.framework */; };
 		26DA3FC0F2A3C933987D5986 /* Pods_UONTourGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68036E0920DDF81A2C9AC85A /* Pods_UONTourGuide.framework */; };
+		3243ADC12C36F4E40033D5B4 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADC02C36F4E40033D5B4 /* HelperFunctions.swift */; };
+		3243ADC32C36F5240033D5B4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADC22C36F5240033D5B4 /* UIColor+Extension.swift */; };
+		3243ADC52C36F5490033D5B4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADC42C36F5490033D5B4 /* UIView+Extension.swift */; };
+		3243ADC72C36F5660033D5B4 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADC62C36F5660033D5B4 /* UIButton+Extension.swift */; };
+		3243ADC92C36F5CF0033D5B4 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADC82C36F5CF0033D5B4 /* SignInVC.swift */; };
+		3243ADCB2C36F6080033D5B4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADCA2C36F6080033D5B4 /* HomeVC.swift */; };
+		3243ADCD2C36F63D0033D5B4 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADCC2C36F63D0033D5B4 /* SideMenuVC.swift */; };
+		3243ADD02C36F68F0033D5B4 /* SideMenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3243ADCF2C36F68F0033D5B4 /* SideMenuTableCell.xib */; };
+		3243ADD12C36F68F0033D5B4 /* SideMenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADCE2C36F68F0033D5B4 /* SideMenuTableCell.swift */; };
+		3243ADD42C36F6AD0033D5B4 /* TourListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3243ADD32C36F6AD0033D5B4 /* TourListTableCell.xib */; };
+		3243ADD52C36F6AD0033D5B4 /* TourListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243ADD22C36F6AD0033D5B4 /* TourListTableCell.swift */; };
+		3259561E2C43F1C5008AC25F /* TourDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259561D2C43F1C5008AC25F /* TourDetailsVC.swift */; };
+		325956202C43F1EA008AC25F /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259561F2C43F1EA008AC25F /* MapVC.swift */; };
+		325956222C43F20C008AC25F /* MapPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325956212C43F20C008AC25F /* MapPreviewVC.swift */; };
+		325956242C43F22B008AC25F /* SubTourListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325956232C43F22B008AC25F /* SubTourListVC.swift */; };
+		325956272C43F257008AC25F /* SubTourListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325956262C43F257008AC25F /* SubTourListTableCell.xib */; };
+		325956282C43F257008AC25F /* SubTourListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325956252C43F257008AC25F /* SubTourListTableCell.swift */; };
+		3259562A2C43F2ED008AC25F /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325956292C43F2ED008AC25F /* GlobalData.swift */; };
 		327FE7D82C1DB401005A0FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7D72C1DB401005A0FAE /* AppDelegate.swift */; };
 		327FE7DA2C1DB401005A0FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7D92C1DB401005A0FAE /* SceneDelegate.swift */; };
 		327FE7DC2C1DB401005A0FAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7DB2C1DB401005A0FAE /* ViewController.swift */; };
@@ -18,6 +36,60 @@
 		327FE7EF2C1DB402005A0FAE /* UONTourGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7EE2C1DB402005A0FAE /* UONTourGuideTests.swift */; };
 		327FE7F92C1DB402005A0FAE /* UONTourGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7F82C1DB402005A0FAE /* UONTourGuideUITests.swift */; };
 		327FE7FB2C1DB402005A0FAE /* UONTourGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE7FA2C1DB402005A0FAE /* UONTourGuideUITestsLaunchTests.swift */; };
+		32B378772C904AF8009DBE4C /* Tour1_stop_9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378642C904AF2009DBE4C /* Tour1_stop_9.mp3 */; };
+		32B378782C904AF8009DBE4C /* Tour1_stop_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378652C904AF3009DBE4C /* Tour1_stop_1.mp3 */; };
+		32B378792C904AF8009DBE4C /* Tour1_stop_13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378662C904AF3009DBE4C /* Tour1_stop_13.mp3 */; };
+		32B3787A2C904AF8009DBE4C /* Tour1_stop_12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378672C904AF3009DBE4C /* Tour1_stop_12.mp3 */; };
+		32B3787B2C904AF8009DBE4C /* Tour1_stop_6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378682C904AF3009DBE4C /* Tour1_stop_6.mp3 */; };
+		32B3787C2C904AF8009DBE4C /* Tour1_stop_19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378692C904AF4009DBE4C /* Tour1_stop_19.mp3 */; };
+		32B3787D2C904AF8009DBE4C /* Tour1_stop_11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B3786A2C904AF4009DBE4C /* Tour1_stop_11.mp3 */; };
+		32B3787E2C904AF8009DBE4C /* Tour1_stop_17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B3786B2C904AF4009DBE4C /* Tour1_stop_17.mp3 */; };
+		32B3787F2C904AF8009DBE4C /* Tour1_stop_7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B3786C2C904AF5009DBE4C /* Tour1_stop_7.mp3 */; };
+		32B378802C904AF8009DBE4C /* Tour1_stop_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B3786D2C904AF5009DBE4C /* Tour1_stop_4.mp3 */; };
+		32B378812C904AF8009DBE4C /* Tour1_stop_10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B3786E2C904AF5009DBE4C /* Tour1_stop_10.mp3 */; };
+		32B378822C904AF8009DBE4C /* Tour1_stop_16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B3786F2C904AF6009DBE4C /* Tour1_stop_16.mp3 */; };
+		32B378832C904AF8009DBE4C /* Tour1_stop_14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378702C904AF6009DBE4C /* Tour1_stop_14.mp3 */; };
+		32B378842C904AF8009DBE4C /* Tour1_stop_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378712C904AF6009DBE4C /* Tour1_stop_2.mp3 */; };
+		32B378852C904AF8009DBE4C /* Tour1_stop_15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378722C904AF7009DBE4C /* Tour1_stop_15.mp3 */; };
+		32B378862C904AF8009DBE4C /* Tour1_stop_8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378732C904AF7009DBE4C /* Tour1_stop_8.mp3 */; };
+		32B378872C904AF8009DBE4C /* Tour1_stop_18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378742C904AF7009DBE4C /* Tour1_stop_18.mp3 */; };
+		32B378882C904AF8009DBE4C /* Tour1_stop_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378752C904AF7009DBE4C /* Tour1_stop_3.mp3 */; };
+		32B378892C904AF8009DBE4C /* Tour1_stop_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32B378762C904AF8009DBE4C /* Tour1_stop_5.mp3 */; };
+		32B378C72C906982009DBE4C /* Tour1_image_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378B42C90697C009DBE4C /* Tour1_image_10.jpg */; };
+		32B378C82C906982009DBE4C /* Tour1_image_16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378B52C90697D009DBE4C /* Tour1_image_16.jpg */; };
+		32B378C92C906982009DBE4C /* Tour1_image_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378B62C90697D009DBE4C /* Tour1_image_12.jpg */; };
+		32B378CA2C906982009DBE4C /* Tour1_image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378B72C90697D009DBE4C /* Tour1_image_4.jpg */; };
+		32B378CB2C906982009DBE4C /* Tour1_image_13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378B82C90697E009DBE4C /* Tour1_image_13.jpg */; };
+		32B378CC2C906982009DBE4C /* Tour1_image_14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378B92C90697E009DBE4C /* Tour1_image_14.jpg */; };
+		32B378CD2C906982009DBE4C /* Tour1_image_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378BA2C90697E009DBE4C /* Tour1_image_9.jpg */; };
+		32B378CE2C906982009DBE4C /* Tour1_image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378BB2C90697F009DBE4C /* Tour1_image_6.jpg */; };
+		32B378CF2C906982009DBE4C /* Tour1_image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378BC2C90697F009DBE4C /* Tour1_image_2.jpg */; };
+		32B378D02C906982009DBE4C /* Tour1_image_15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378BD2C90697F009DBE4C /* Tour1_image_15.jpg */; };
+		32B378D12C906982009DBE4C /* Tour1_image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378BE2C906980009DBE4C /* Tour1_image_3.jpg */; };
+		32B378D22C906982009DBE4C /* Tour1_image_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378BF2C906980009DBE4C /* Tour1_image_5.jpg */; };
+		32B378D32C906982009DBE4C /* Tour1_image_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C02C906980009DBE4C /* Tour1_image_7.jpg */; };
+		32B378D42C906982009DBE4C /* Tour1_image_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C12C906981009DBE4C /* Tour1_image_17.jpg */; };
+		32B378D52C906982009DBE4C /* Tour1_image_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C22C906981009DBE4C /* Tour1_image_11.jpg */; };
+		32B378D62C906982009DBE4C /* Tour1_image_18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C32C906981009DBE4C /* Tour1_image_18.jpg */; };
+		32B378D72C906982009DBE4C /* Tour1_image_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C42C906982009DBE4C /* Tour1_image_8.jpg */; };
+		32B378D82C906982009DBE4C /* Tour1_image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C52C906982009DBE4C /* Tour1_image_1.jpg */; };
+		32B378D92C906982009DBE4C /* Tour1_image_19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B378C62C906982009DBE4C /* Tour1_image_19.jpg */; };
+		32D926B02C2866AD003E8385 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D926AF2C2866AD003E8385 /* GoogleService-Info.plist */; };
+		32D926B22C286CC5003E8385 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D926B12C286CC5003E8385 /* SignUpVC.swift */; };
+		32F8A2422C5FCC4D0015E353 /* MediaPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A2412C5FCC4D0015E353 /* MediaPlayerVC.swift */; };
+		32F8A2442C5FCC830015E353 /* CustomMediaPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F8A2432C5FCC830015E353 /* CustomMediaPlayerView.xib */; };
+		32F8A2462C5FCCA70015E353 /* CustomMediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A2452C5FCCA70015E353 /* CustomMediaPlayerView.swift */; };
+		32F8A2492C5FCD410015E353 /* TriviaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A2482C5FCD410015E353 /* TriviaVC.swift */; };
+		32F8A24C2C5FCE220015E353 /* TriviaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A24A2C5FCE220015E353 /* TriviaTableCell.swift */; };
+		32F8A24D2C5FCE220015E353 /* TriviaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F8A24B2C5FCE220015E353 /* TriviaTableCell.xib */; };
+		32F8A2502C5FCED10015E353 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A24F2C5FCED10015E353 /* QuizVC.swift */; };
+		32F8A2522C5FCF610015E353 /* QuizQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A2512C5FCF610015E353 /* QuizQuestionVC.swift */; };
+		32F8A2552C5FCFA10015E353 /* QuizQuestionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A2532C5FCFA10015E353 /* QuizQuestionCollectionCell.swift */; };
+		32F8A2562C5FCFA10015E353 /* QuizQuestionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F8A2542C5FCFA10015E353 /* QuizQuestionCollectionCell.xib */; };
+		32F8A2582C5FD0140015E353 /* QuizResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A2572C5FD0140015E353 /* QuizResultVC.swift */; };
+		32F8A25B2C5FD0440015E353 /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A25A2C5FD0440015E353 /* AboutAppVC.swift */; };
+		32F8A25D2C5FD0590015E353 /* UniversityInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A25C2C5FD0590015E353 /* UniversityInfoVC.swift */; };
+		32F8A25F2C5FD06A0015E353 /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8A25E2C5FD06A0015E353 /* FeedbackVC.swift */; };
 		E16FEC099CCD8A08E2C75355 /* Pods_UONTourGuide_UONTourGuideUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBC7164E33BD62003AEE090 /* Pods_UONTourGuide_UONTourGuideUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +115,24 @@
 		0DE9E991D7744AB3B9216A8F /* Pods-UONTourGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UONTourGuide.debug.xcconfig"; path = "Target Support Files/Pods-UONTourGuide/Pods-UONTourGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		25169820D5A1E419E273536B /* Pods-UONTourGuide-UONTourGuideUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UONTourGuide-UONTourGuideUITests.debug.xcconfig"; path = "Target Support Files/Pods-UONTourGuide-UONTourGuideUITests/Pods-UONTourGuide-UONTourGuideUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E40D2F34F82B2DE7A36EB6E /* Pods_UONTourGuideTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UONTourGuideTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3243ADC02C36F4E40033D5B4 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		3243ADC22C36F5240033D5B4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3243ADC42C36F5490033D5B4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3243ADC62C36F5660033D5B4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		3243ADC82C36F5CF0033D5B4 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		3243ADCA2C36F6080033D5B4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3243ADCC2C36F63D0033D5B4 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		3243ADCE2C36F68F0033D5B4 /* SideMenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableCell.swift; sourceTree = "<group>"; };
+		3243ADCF2C36F68F0033D5B4 /* SideMenuTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableCell.xib; sourceTree = "<group>"; };
+		3243ADD22C36F6AD0033D5B4 /* TourListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListTableCell.swift; sourceTree = "<group>"; };
+		3243ADD32C36F6AD0033D5B4 /* TourListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourListTableCell.xib; sourceTree = "<group>"; };
+		3259561D2C43F1C5008AC25F /* TourDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDetailsVC.swift; sourceTree = "<group>"; };
+		3259561F2C43F1EA008AC25F /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		325956212C43F20C008AC25F /* MapPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPreviewVC.swift; sourceTree = "<group>"; };
+		325956232C43F22B008AC25F /* SubTourListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTourListVC.swift; sourceTree = "<group>"; };
+		325956252C43F257008AC25F /* SubTourListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTourListTableCell.swift; sourceTree = "<group>"; };
+		325956262C43F257008AC25F /* SubTourListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubTourListTableCell.xib; sourceTree = "<group>"; };
+		325956292C43F2ED008AC25F /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		327FE7D42C1DB401005A0FAE /* UONTourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UONTourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327FE7D72C1DB401005A0FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327FE7D92C1DB401005A0FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +146,60 @@
 		327FE7F42C1DB402005A0FAE /* UONTourGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UONTourGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327FE7F82C1DB402005A0FAE /* UONTourGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UONTourGuideUITests.swift; sourceTree = "<group>"; };
 		327FE7FA2C1DB402005A0FAE /* UONTourGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UONTourGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32B378642C904AF2009DBE4C /* Tour1_stop_9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_9.mp3; sourceTree = "<group>"; };
+		32B378652C904AF3009DBE4C /* Tour1_stop_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_1.mp3; sourceTree = "<group>"; };
+		32B378662C904AF3009DBE4C /* Tour1_stop_13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_13.mp3; sourceTree = "<group>"; };
+		32B378672C904AF3009DBE4C /* Tour1_stop_12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_12.mp3; sourceTree = "<group>"; };
+		32B378682C904AF3009DBE4C /* Tour1_stop_6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_6.mp3; sourceTree = "<group>"; };
+		32B378692C904AF4009DBE4C /* Tour1_stop_19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_19.mp3; sourceTree = "<group>"; };
+		32B3786A2C904AF4009DBE4C /* Tour1_stop_11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_11.mp3; sourceTree = "<group>"; };
+		32B3786B2C904AF4009DBE4C /* Tour1_stop_17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_17.mp3; sourceTree = "<group>"; };
+		32B3786C2C904AF5009DBE4C /* Tour1_stop_7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_7.mp3; sourceTree = "<group>"; };
+		32B3786D2C904AF5009DBE4C /* Tour1_stop_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_4.mp3; sourceTree = "<group>"; };
+		32B3786E2C904AF5009DBE4C /* Tour1_stop_10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_10.mp3; sourceTree = "<group>"; };
+		32B3786F2C904AF6009DBE4C /* Tour1_stop_16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_16.mp3; sourceTree = "<group>"; };
+		32B378702C904AF6009DBE4C /* Tour1_stop_14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_14.mp3; sourceTree = "<group>"; };
+		32B378712C904AF6009DBE4C /* Tour1_stop_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_2.mp3; sourceTree = "<group>"; };
+		32B378722C904AF7009DBE4C /* Tour1_stop_15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_15.mp3; sourceTree = "<group>"; };
+		32B378732C904AF7009DBE4C /* Tour1_stop_8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_8.mp3; sourceTree = "<group>"; };
+		32B378742C904AF7009DBE4C /* Tour1_stop_18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_18.mp3; sourceTree = "<group>"; };
+		32B378752C904AF7009DBE4C /* Tour1_stop_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_3.mp3; sourceTree = "<group>"; };
+		32B378762C904AF8009DBE4C /* Tour1_stop_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tour1_stop_5.mp3; sourceTree = "<group>"; };
+		32B378B42C90697C009DBE4C /* Tour1_image_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_10.jpg; sourceTree = "<group>"; };
+		32B378B52C90697D009DBE4C /* Tour1_image_16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_16.jpg; sourceTree = "<group>"; };
+		32B378B62C90697D009DBE4C /* Tour1_image_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_12.jpg; sourceTree = "<group>"; };
+		32B378B72C90697D009DBE4C /* Tour1_image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_4.jpg; sourceTree = "<group>"; };
+		32B378B82C90697E009DBE4C /* Tour1_image_13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_13.jpg; sourceTree = "<group>"; };
+		32B378B92C90697E009DBE4C /* Tour1_image_14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_14.jpg; sourceTree = "<group>"; };
+		32B378BA2C90697E009DBE4C /* Tour1_image_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_9.jpg; sourceTree = "<group>"; };
+		32B378BB2C90697F009DBE4C /* Tour1_image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_6.jpg; sourceTree = "<group>"; };
+		32B378BC2C90697F009DBE4C /* Tour1_image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_2.jpg; sourceTree = "<group>"; };
+		32B378BD2C90697F009DBE4C /* Tour1_image_15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_15.jpg; sourceTree = "<group>"; };
+		32B378BE2C906980009DBE4C /* Tour1_image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_3.jpg; sourceTree = "<group>"; };
+		32B378BF2C906980009DBE4C /* Tour1_image_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_5.jpg; sourceTree = "<group>"; };
+		32B378C02C906980009DBE4C /* Tour1_image_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_7.jpg; sourceTree = "<group>"; };
+		32B378C12C906981009DBE4C /* Tour1_image_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_17.jpg; sourceTree = "<group>"; };
+		32B378C22C906981009DBE4C /* Tour1_image_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_11.jpg; sourceTree = "<group>"; };
+		32B378C32C906981009DBE4C /* Tour1_image_18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_18.jpg; sourceTree = "<group>"; };
+		32B378C42C906982009DBE4C /* Tour1_image_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_8.jpg; sourceTree = "<group>"; };
+		32B378C52C906982009DBE4C /* Tour1_image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_1.jpg; sourceTree = "<group>"; };
+		32B378C62C906982009DBE4C /* Tour1_image_19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour1_image_19.jpg; sourceTree = "<group>"; };
+		32D926AF2C2866AD003E8385 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32D926B12C286CC5003E8385 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		32F8A2412C5FCC4D0015E353 /* MediaPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerVC.swift; sourceTree = "<group>"; };
+		32F8A2432C5FCC830015E353 /* CustomMediaPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMediaPlayerView.xib; sourceTree = "<group>"; };
+		32F8A2452C5FCCA70015E353 /* CustomMediaPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMediaPlayerView.swift; sourceTree = "<group>"; };
+		32F8A2482C5FCD410015E353 /* TriviaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaVC.swift; sourceTree = "<group>"; };
+		32F8A24A2C5FCE220015E353 /* TriviaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaTableCell.swift; sourceTree = "<group>"; };
+		32F8A24B2C5FCE220015E353 /* TriviaTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TriviaTableCell.xib; sourceTree = "<group>"; };
+		32F8A24F2C5FCED10015E353 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		32F8A2512C5FCF610015E353 /* QuizQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionVC.swift; sourceTree = "<group>"; };
+		32F8A2532C5FCFA10015E353 /* QuizQuestionCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionCollectionCell.swift; sourceTree = "<group>"; };
+		32F8A2542C5FCFA10015E353 /* QuizQuestionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizQuestionCollectionCell.xib; sourceTree = "<group>"; };
+		32F8A2572C5FD0140015E353 /* QuizResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultVC.swift; sourceTree = "<group>"; };
+		32F8A25A2C5FD0440015E353 /* AboutAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppVC.swift; sourceTree = "<group>"; };
+		32F8A25C2C5FD0590015E353 /* UniversityInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityInfoVC.swift; sourceTree = "<group>"; };
+		32F8A25E2C5FD06A0015E353 /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
 		68036E0920DDF81A2C9AC85A /* Pods_UONTourGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UONTourGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7007F857E40920E103AC2D43 /* Pods-UONTourGuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UONTourGuideTests.release.xcconfig"; path = "Target Support Files/Pods-UONTourGuideTests/Pods-UONTourGuideTests.release.xcconfig"; sourceTree = "<group>"; };
 		74DA22F804CDF8EF1C9F4517 /* Pods-UONTourGuide-UONTourGuideUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UONTourGuide-UONTourGuideUITests.release.xcconfig"; path = "Target Support Files/Pods-UONTourGuide-UONTourGuideUITests/Pods-UONTourGuide-UONTourGuideUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +235,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3243ADBE2C36F4980033D5B4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3243ADC02C36F4E40033D5B4 /* HelperFunctions.swift */,
+				325956292C43F2ED008AC25F /* GlobalData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3243ADBF2C36F4A50033D5B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3243ADC22C36F5240033D5B4 /* UIColor+Extension.swift */,
+				3243ADC42C36F5490033D5B4 /* UIView+Extension.swift */,
+				3243ADC62C36F5660033D5B4 /* UIButton+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		325956192C43EDD9008AC25F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A2592C5FD0360015E353 /* Other */,
+				32F8A24E2C5FCEA00015E353 /* Quiz */,
+				32F8A2472C5FCD210015E353 /* Trivia */,
+				3259561A2C43EE2E008AC25F /* Authentication */,
+				3259561B2C43EE5A008AC25F /* Home */,
+				3259561C2C43EE7A008AC25F /* TourDetails */,
+				32F8A2402C5FCC2C0015E353 /* MediaPlayer */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3259561A2C43EE2E008AC25F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				327FE7DB2C1DB401005A0FAE /* ViewController.swift */,
+				32D926B12C286CC5003E8385 /* SignUpVC.swift */,
+				3243ADC82C36F5CF0033D5B4 /* SignInVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3259561B2C43EE5A008AC25F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3243ADCA2C36F6080033D5B4 /* HomeVC.swift */,
+				3243ADCC2C36F63D0033D5B4 /* SideMenuVC.swift */,
+				3243ADCE2C36F68F0033D5B4 /* SideMenuTableCell.swift */,
+				3243ADCF2C36F68F0033D5B4 /* SideMenuTableCell.xib */,
+				3243ADD22C36F6AD0033D5B4 /* TourListTableCell.swift */,
+				3243ADD32C36F6AD0033D5B4 /* TourListTableCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3259561C2C43EE7A008AC25F /* TourDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3259561D2C43F1C5008AC25F /* TourDetailsVC.swift */,
+				3259561F2C43F1EA008AC25F /* MapVC.swift */,
+				325956212C43F20C008AC25F /* MapPreviewVC.swift */,
+				325956232C43F22B008AC25F /* SubTourListVC.swift */,
+				325956252C43F257008AC25F /* SubTourListTableCell.swift */,
+				325956262C43F257008AC25F /* SubTourListTableCell.xib */,
+			);
+			path = TourDetails;
+			sourceTree = "<group>";
+		};
 		327FE7CB2C1DB401005A0FAE = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +329,17 @@
 		327FE7D62C1DB401005A0FAE /* UONTourGuide */ = {
 			isa = PBXGroup;
 			children = (
+				32F8A2602C5FD0A60015E353 /* Media */,
 				327FE7D72C1DB401005A0FAE /* AppDelegate.swift */,
 				327FE7D92C1DB401005A0FAE /* SceneDelegate.swift */,
-				327FE7DB2C1DB401005A0FAE /* ViewController.swift */,
 				327FE7DD2C1DB401005A0FAE /* Main.storyboard */,
 				327FE7E02C1DB402005A0FAE /* Assets.xcassets */,
 				327FE7E22C1DB402005A0FAE /* LaunchScreen.storyboard */,
 				327FE7E52C1DB402005A0FAE /* Info.plist */,
+				32D926AF2C2866AD003E8385 /* GoogleService-Info.plist */,
+				325956192C43EDD9008AC25F /* Controllers */,
+				3243ADBF2C36F4A50033D5B4 /* Extensions */,
+				3243ADBE2C36F4980033D5B4 /* Helpers */,
 			);
 			path = UONTourGuide;
 			sourceTree = "<group>";
@@ -144,6 +361,117 @@
 			path = UONTourGuideUITests;
 			sourceTree = "<group>";
 		};
+		32F8A2402C5FCC2C0015E353 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A2412C5FCC4D0015E353 /* MediaPlayerVC.swift */,
+				32F8A2432C5FCC830015E353 /* CustomMediaPlayerView.xib */,
+				32F8A2452C5FCCA70015E353 /* CustomMediaPlayerView.swift */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		32F8A2472C5FCD210015E353 /* Trivia */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A2482C5FCD410015E353 /* TriviaVC.swift */,
+				32F8A24A2C5FCE220015E353 /* TriviaTableCell.swift */,
+				32F8A24B2C5FCE220015E353 /* TriviaTableCell.xib */,
+			);
+			path = Trivia;
+			sourceTree = "<group>";
+		};
+		32F8A24E2C5FCEA00015E353 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A24F2C5FCED10015E353 /* QuizVC.swift */,
+				32F8A2512C5FCF610015E353 /* QuizQuestionVC.swift */,
+				32F8A2532C5FCFA10015E353 /* QuizQuestionCollectionCell.swift */,
+				32F8A2542C5FCFA10015E353 /* QuizQuestionCollectionCell.xib */,
+				32F8A2572C5FD0140015E353 /* QuizResultVC.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		32F8A2592C5FD0360015E353 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A25A2C5FD0440015E353 /* AboutAppVC.swift */,
+				32F8A25C2C5FD0590015E353 /* UniversityInfoVC.swift */,
+				32F8A25E2C5FD06A0015E353 /* FeedbackVC.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		32F8A2602C5FD0A60015E353 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A2612C5FD0B50015E353 /* Tour1 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		32F8A2612C5FD0B50015E353 /* Tour1 */ = {
+			isa = PBXGroup;
+			children = (
+				32F8A2632C5FD0C90015E353 /* Audio */,
+				32F8A2622C5FD0C30015E353 /* Image */,
+			);
+			path = Tour1;
+			sourceTree = "<group>";
+		};
+		32F8A2622C5FD0C30015E353 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				32B378C52C906982009DBE4C /* Tour1_image_1.jpg */,
+				32B378BC2C90697F009DBE4C /* Tour1_image_2.jpg */,
+				32B378BE2C906980009DBE4C /* Tour1_image_3.jpg */,
+				32B378B72C90697D009DBE4C /* Tour1_image_4.jpg */,
+				32B378BF2C906980009DBE4C /* Tour1_image_5.jpg */,
+				32B378BB2C90697F009DBE4C /* Tour1_image_6.jpg */,
+				32B378C02C906980009DBE4C /* Tour1_image_7.jpg */,
+				32B378C42C906982009DBE4C /* Tour1_image_8.jpg */,
+				32B378BA2C90697E009DBE4C /* Tour1_image_9.jpg */,
+				32B378B42C90697C009DBE4C /* Tour1_image_10.jpg */,
+				32B378C22C906981009DBE4C /* Tour1_image_11.jpg */,
+				32B378B62C90697D009DBE4C /* Tour1_image_12.jpg */,
+				32B378B82C90697E009DBE4C /* Tour1_image_13.jpg */,
+				32B378B92C90697E009DBE4C /* Tour1_image_14.jpg */,
+				32B378BD2C90697F009DBE4C /* Tour1_image_15.jpg */,
+				32B378B52C90697D009DBE4C /* Tour1_image_16.jpg */,
+				32B378C12C906981009DBE4C /* Tour1_image_17.jpg */,
+				32B378C32C906981009DBE4C /* Tour1_image_18.jpg */,
+				32B378C62C906982009DBE4C /* Tour1_image_19.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		32F8A2632C5FD0C90015E353 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				32B378652C904AF3009DBE4C /* Tour1_stop_1.mp3 */,
+				32B378712C904AF6009DBE4C /* Tour1_stop_2.mp3 */,
+				32B378752C904AF7009DBE4C /* Tour1_stop_3.mp3 */,
+				32B3786D2C904AF5009DBE4C /* Tour1_stop_4.mp3 */,
+				32B378762C904AF8009DBE4C /* Tour1_stop_5.mp3 */,
+				32B378682C904AF3009DBE4C /* Tour1_stop_6.mp3 */,
+				32B3786C2C904AF5009DBE4C /* Tour1_stop_7.mp3 */,
+				32B378732C904AF7009DBE4C /* Tour1_stop_8.mp3 */,
+				32B378642C904AF2009DBE4C /* Tour1_stop_9.mp3 */,
+				32B3786E2C904AF5009DBE4C /* Tour1_stop_10.mp3 */,
+				32B3786A2C904AF4009DBE4C /* Tour1_stop_11.mp3 */,
+				32B378672C904AF3009DBE4C /* Tour1_stop_12.mp3 */,
+				32B378662C904AF3009DBE4C /* Tour1_stop_13.mp3 */,
+				32B378702C904AF6009DBE4C /* Tour1_stop_14.mp3 */,
+				32B378722C904AF7009DBE4C /* Tour1_stop_15.mp3 */,
+				32B3786F2C904AF6009DBE4C /* Tour1_stop_16.mp3 */,
+				32B3786B2C904AF4009DBE4C /* Tour1_stop_17.mp3 */,
+				32B378742C904AF7009DBE4C /* Tour1_stop_18.mp3 */,
+				32B378692C904AF4009DBE4C /* Tour1_stop_19.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		D59756A8C223CE57C73EE1F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +482,6 @@
 				864914F9DE609E0133AD9A0F /* Pods-UONTourGuideTests.debug.xcconfig */,
 				7007F857E40920E103AC2D43 /* Pods-UONTourGuideTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +507,7 @@
 				327FE7D12C1DB401005A0FAE /* Frameworks */,
 				327FE7D22C1DB401005A0FAE /* Resources */,
 				4DAFC7799E7D7136A1D9B0BF /* [CP] Copy Pods Resources */,
+				A28E4A92F0DAB2B49EF587C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +546,7 @@
 				327FE7F12C1DB402005A0FAE /* Frameworks */,
 				327FE7F22C1DB402005A0FAE /* Resources */,
 				454972B78BCB614891132174 /* [CP] Copy Pods Resources */,
+				607EB310B49BF82DEB1CC772 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,9 +606,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B378CC2C906982009DBE4C /* Tour1_image_14.jpg in Resources */,
+				32B378C92C906982009DBE4C /* Tour1_image_12.jpg in Resources */,
+				32B378C72C906982009DBE4C /* Tour1_image_10.jpg in Resources */,
+				32B378C82C906982009DBE4C /* Tour1_image_16.jpg in Resources */,
+				32B378832C904AF8009DBE4C /* Tour1_stop_14.mp3 in Resources */,
+				3243ADD42C36F6AD0033D5B4 /* TourListTableCell.xib in Resources */,
+				32B378772C904AF8009DBE4C /* Tour1_stop_9.mp3 in Resources */,
+				32B378D02C906982009DBE4C /* Tour1_image_15.jpg in Resources */,
+				32B378862C904AF8009DBE4C /* Tour1_stop_8.mp3 in Resources */,
+				32B378D82C906982009DBE4C /* Tour1_image_1.jpg in Resources */,
+				32B378CF2C906982009DBE4C /* Tour1_image_2.jpg in Resources */,
+				32B378D62C906982009DBE4C /* Tour1_image_18.jpg in Resources */,
+				32B378CB2C906982009DBE4C /* Tour1_image_13.jpg in Resources */,
+				32B378CD2C906982009DBE4C /* Tour1_image_9.jpg in Resources */,
+				32B378802C904AF8009DBE4C /* Tour1_stop_4.mp3 in Resources */,
+				32B378892C904AF8009DBE4C /* Tour1_stop_5.mp3 in Resources */,
 				327FE7E12C1DB402005A0FAE /* Assets.xcassets in Resources */,
+				32B378D32C906982009DBE4C /* Tour1_image_7.jpg in Resources */,
+				32B378882C904AF8009DBE4C /* Tour1_stop_3.mp3 in Resources */,
+				32B378872C904AF8009DBE4C /* Tour1_stop_18.mp3 in Resources */,
+				32D926B02C2866AD003E8385 /* GoogleService-Info.plist in Resources */,
+				32F8A2562C5FCFA10015E353 /* QuizQuestionCollectionCell.xib in Resources */,
+				32F8A24D2C5FCE220015E353 /* TriviaTableCell.xib in Resources */,
+				32B378CA2C906982009DBE4C /* Tour1_image_4.jpg in Resources */,
+				32B3787C2C904AF8009DBE4C /* Tour1_stop_19.mp3 in Resources */,
 				327FE7E42C1DB402005A0FAE /* Base in Resources */,
+				32B378D12C906982009DBE4C /* Tour1_image_3.jpg in Resources */,
+				32B3787F2C904AF8009DBE4C /* Tour1_stop_7.mp3 in Resources */,
+				32B3787A2C904AF8009DBE4C /* Tour1_stop_12.mp3 in Resources */,
+				32B378D52C906982009DBE4C /* Tour1_image_11.jpg in Resources */,
 				327FE7DF2C1DB401005A0FAE /* Base in Resources */,
+				32B378792C904AF8009DBE4C /* Tour1_stop_13.mp3 in Resources */,
+				32B3787B2C904AF8009DBE4C /* Tour1_stop_6.mp3 in Resources */,
+				32F8A2442C5FCC830015E353 /* CustomMediaPlayerView.xib in Resources */,
+				32B3787D2C904AF8009DBE4C /* Tour1_stop_11.mp3 in Resources */,
+				32B378812C904AF8009DBE4C /* Tour1_stop_10.mp3 in Resources */,
+				32B378782C904AF8009DBE4C /* Tour1_stop_1.mp3 in Resources */,
+				32B378822C904AF8009DBE4C /* Tour1_stop_16.mp3 in Resources */,
+				32B3787E2C904AF8009DBE4C /* Tour1_stop_17.mp3 in Resources */,
+				32B378D92C906982009DBE4C /* Tour1_image_19.jpg in Resources */,
+				32B378852C904AF8009DBE4C /* Tour1_stop_15.mp3 in Resources */,
+				32B378D22C906982009DBE4C /* Tour1_image_5.jpg in Resources */,
+				32B378CE2C906982009DBE4C /* Tour1_image_6.jpg in Resources */,
+				325956272C43F257008AC25F /* SubTourListTableCell.xib in Resources */,
+				32B378D42C906982009DBE4C /* Tour1_image_17.jpg in Resources */,
+				32B378842C904AF8009DBE4C /* Tour1_stop_2.mp3 in Resources */,
+				32B378D72C906982009DBE4C /* Tour1_image_8.jpg in Resources */,
+				3243ADD02C36F68F0033D5B4 /* SideMenuTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +730,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		607EB310B49BF82DEB1CC772 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UONTourGuide-UONTourGuideUITests/Pods-UONTourGuide-UONTourGuideUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UONTourGuide-UONTourGuideUITests/Pods-UONTourGuide-UONTourGuideUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UONTourGuide-UONTourGuideUITests/Pods-UONTourGuide-UONTourGuideUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		898AC156CCD0433B91B1D2CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +767,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28E4A92F0DAB2B49EF587C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UONTourGuide/Pods-UONTourGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UONTourGuide/Pods-UONTourGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UONTourGuide/Pods-UONTourGuide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C0D6BF60531EAF6A421B1E33 /* [CP] Check Pods Manifest.lock */ = {
@@ -407,9 +815,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3243ADC12C36F4E40033D5B4 /* HelperFunctions.swift in Sources */,
+				32F8A2502C5FCED10015E353 /* QuizVC.swift in Sources */,
+				325956282C43F257008AC25F /* SubTourListTableCell.swift in Sources */,
+				3243ADCB2C36F6080033D5B4 /* HomeVC.swift in Sources */,
+				3243ADC52C36F5490033D5B4 /* UIView+Extension.swift in Sources */,
+				325956242C43F22B008AC25F /* SubTourListVC.swift in Sources */,
+				3243ADC92C36F5CF0033D5B4 /* SignInVC.swift in Sources */,
+				32D926B22C286CC5003E8385 /* SignUpVC.swift in Sources */,
 				327FE7DC2C1DB401005A0FAE /* ViewController.swift in Sources */,
+				32F8A25B2C5FD0440015E353 /* AboutAppVC.swift in Sources */,
+				325956222C43F20C008AC25F /* MapPreviewVC.swift in Sources */,
+				32F8A25F2C5FD06A0015E353 /* FeedbackVC.swift in Sources */,
+				32F8A2492C5FCD410015E353 /* TriviaVC.swift in Sources */,
+				3243ADD52C36F6AD0033D5B4 /* TourListTableCell.swift in Sources */,
+				3243ADC32C36F5240033D5B4 /* UIColor+Extension.swift in Sources */,
+				32F8A2522C5FCF610015E353 /* QuizQuestionVC.swift in Sources */,
+				32F8A2462C5FCCA70015E353 /* CustomMediaPlayerView.swift in Sources */,
+				3243ADC72C36F5660033D5B4 /* UIButton+Extension.swift in Sources */,
+				3243ADD12C36F68F0033D5B4 /* SideMenuTableCell.swift in Sources */,
+				32F8A25D2C5FD0590015E353 /* UniversityInfoVC.swift in Sources */,
+				325956202C43F1EA008AC25F /* MapVC.swift in Sources */,
 				327FE7D82C1DB401005A0FAE /* AppDelegate.swift in Sources */,
+				3259562A2C43F2ED008AC25F /* GlobalData.swift in Sources */,
+				32F8A2422C5FCC4D0015E353 /* MediaPlayerVC.swift in Sources */,
+				32F8A2552C5FCFA10015E353 /* QuizQuestionCollectionCell.swift in Sources */,
+				32F8A2582C5FD0140015E353 /* QuizResultVC.swift in Sources */,
 				327FE7DA2C1DB401005A0FAE /* SceneDelegate.swift in Sources */,
+				3243ADCD2C36F63D0033D5B4 /* SideMenuVC.swift in Sources */,
+				3259561E2C43F1C5008AC25F /* TourDetailsVC.swift in Sources */,
+				32F8A24C2C5FCE220015E353 /* TriviaTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +1028,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U9S659FDW9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UONTourGuide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -600,6 +1036,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +1059,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U9S659FDW9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UONTourGuide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -629,6 +1067,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

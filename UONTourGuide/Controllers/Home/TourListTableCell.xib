@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TourListTableCell" rowHeight="261" id="MWE-zb-Nhb" customClass="TourListTableCell" customModule="UONTourGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MWE-zb-Nhb" id="07Z-ZG-mdO">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="261"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7W-72-Ys4">
+                        <rect key="frame" x="10" y="5" width="339" height="251"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tour1" translatesAutoresizingMaskIntoConstraints="NO" id="3vM-29-Plu">
+                                <rect key="frame" x="0.0" y="0.0" width="339" height="251"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Nottingham" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY0-r3-zox">
+                                <rect key="frame" x="12" y="12" width="315" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvQ-s7-umn">
+                                <rect key="frame" x="249" y="110.66666666666667" width="80" height="30.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CDt-pA-uiF"/>
+                                    <constraint firstAttribute="height" constant="30" id="Yd4-0s-lwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start Tour">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStartTourTapped:" destination="MWE-zb-Nhb" eventType="touchUpInside" id="QZ9-0A-N4A"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is description of the tour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F72-eh-bUT">
+                                <rect key="frame" x="12" y="219.66666666666666" width="315" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="F72-eh-bUT" secondAttribute="bottom" constant="12" id="0mN-yM-hGj"/>
+                            <constraint firstAttribute="trailing" secondItem="CY0-r3-zox" secondAttribute="trailing" constant="12" id="4bm-s6-itm"/>
+                            <constraint firstAttribute="trailing" secondItem="3vM-29-Plu" secondAttribute="trailing" id="7H1-GN-0RD"/>
+                            <constraint firstItem="3vM-29-Plu" firstAttribute="top" secondItem="K7W-72-Ys4" secondAttribute="top" id="BEA-00-bWk"/>
+                            <constraint firstAttribute="trailing" secondItem="F72-eh-bUT" secondAttribute="trailing" constant="12" id="Kga-7g-fDw"/>
+                            <constraint firstAttribute="trailing" secondItem="rvQ-s7-umn" secondAttribute="trailing" constant="10" id="T0a-Y3-jZs"/>
+                            <constraint firstItem="CY0-r3-zox" firstAttribute="top" secondItem="K7W-72-Ys4" secondAttribute="top" constant="12" id="ZIS-Js-wQI"/>
+                            <constraint firstItem="CY0-r3-zox" firstAttribute="leading" secondItem="K7W-72-Ys4" secondAttribute="leading" constant="12" id="fJP-9b-2Yb"/>
+                            <constraint firstItem="F72-eh-bUT" firstAttribute="leading" secondItem="K7W-72-Ys4" secondAttribute="leading" constant="12" id="hn6-96-n7V"/>
+                            <constraint firstAttribute="bottom" secondItem="3vM-29-Plu" secondAttribute="bottom" id="hvV-Oj-vLO"/>
+                            <constraint firstItem="rvQ-s7-umn" firstAttribute="centerY" secondItem="K7W-72-Ys4" secondAttribute="centerY" id="kvy-Hs-oqY"/>
+                            <constraint firstItem="3vM-29-Plu" firstAttribute="leading" secondItem="K7W-72-Ys4" secondAttribute="leading" id="rzd-0s-mlX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="K7W-72-Ys4" secondAttribute="bottom" constant="5" id="0QN-ne-2kn"/>
+                    <constraint firstAttribute="trailing" secondItem="K7W-72-Ys4" secondAttribute="trailing" constant="10" id="XNi-J7-XEe"/>
+                    <constraint firstItem="K7W-72-Ys4" firstAttribute="leading" secondItem="07Z-ZG-mdO" secondAttribute="leading" constant="10" id="YE7-DR-4UX"/>
+                    <constraint firstItem="K7W-72-Ys4" firstAttribute="top" secondItem="07Z-ZG-mdO" secondAttribute="top" constant="5" id="pOm-YA-7mH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fpY-my-3d5"/>
+            <connections>
+                <outlet property="btnStartTour" destination="rvQ-s7-umn" id="nR0-B8-Z40"/>
+                <outlet property="imgTour" destination="3vM-29-Plu" id="m4Y-31-JAe"/>
+                <outlet property="lblTourDescription" destination="F72-eh-bUT" id="z0m-jJ-ILc"/>
+                <outlet property="lblTourName" destination="CY0-r3-zox" id="euF-FT-9Zp"/>
+                <outlet property="mainView" destination="K7W-72-Ys4" id="5Er-js-J6x"/>
+            </connections>
+            <point key="canvasLocation" x="107.63358778625954" y="96.126760563380287"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_tour1" width="2560" height="2017"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
